@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snake PvP Multiplayer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Snake PvP Multiplayer</h2>
+    <canvas id="game" width="400" height="400"></canvas>
+
+    <div class="controls">
+      <div class="dpad">
+        <div></div>
+        <button onclick="setDirection('up')">↑</button>
+        <div></div>
+
+        <button onclick="setDirection('left')">←</button>
+        <div></div>
+        <button onclick="setDirection('right')">→</button>
+
+        <div></div>
+        <button onclick="setDirection('down')">↓</button>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="score">
+      Score: <span id="score">0</span><br />
+      <p>Capai 15 poin untuk menang! <span>@Fitriyanto</span></p>
+      <div>Highscore: <span id="highscore">0</span></div>
+    </div>
+
+    <script src="client.js"></script>
+  </body>
+</html>
